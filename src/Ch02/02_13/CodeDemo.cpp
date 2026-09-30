@@ -10,7 +10,12 @@ int add_int(float a, double b, long double c){
 
     // Write your code here
     result = static_cast<int>(a) + static_cast<int>(b) + static_cast<int>(c);
-    
+
+    int baseDamage = 50;
+    int strength = 20;
+    int criticalHitMultiplier = 2;
+    int damageDealt = baseDamage * (strength / 10 + 1) * criticalHitMultiplier;
+    std::cout << "Damage Dealt: " << damageDealt << std::endl;
     return result;
 }
 

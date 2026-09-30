@@ -16,7 +16,17 @@ int main(){
     std::cin >> operation;
 
     // switch goes here
+    switch(operation){
+        case '+': result = operand_1 + operand_2;
+            break;
+        case '-': result = operand_1 - operand_2;
+            break;
+        case '*': result = operand_1 * operand_2;
+            break;
+        case '/': result = operand_1 / operand_2;
+            break;
 
+    }    
     std::cout << "The result is " << result << std::endl;
     
     std::cout << std::endl << std::endl;
